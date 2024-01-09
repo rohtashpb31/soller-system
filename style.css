@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#box{
+    height: 100vh;
+    width: 100vw;     
+    background-image: url(/img/pexels-photo-1252890.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sun{
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+    background-image: url(/img/sun1.png);
+    background-size: cover;
+    margin: 350px auto;
+    position: relative;
+}
+.sun:hover{
+    transform: scale(1.2);
+}
+.mercury{
+    height: 40px;
+    width: 40px;
+    border-radius: 70px;
+    background-image: url(/img/mercury.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 25px;
+    right: -60px;
+    animation-name: murcury;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: -70px;
+
+}
+
+@keyframes murcury{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(359deg);
+    }
+}
+.venes{
+    height: 50px;
+    width: 50px;
+    border-radius: 150px;
+    background-image: url(/img/vens.jpeg);
+    background-size: cover;
+    position: absolute;
+    bottom: 30px;
+    right: -130px;
+    animation-name: murcury;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: -130px;
+
+}
+.earth{
+    height: 53px;
+    width: 53px;
+    border-radius: 150px;
+    background-image: url(/img/earth.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 30px;
+    right: -270px;
+    animation-name: murcury;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: -290px;
+}
+.moon{
+    height: 30px;
+    width: 30px;
+    border-radius: 150px;
+    background-image: url(/img/moon\ .jpeg);
+    background-size: cover;
+    position: absolute;
+    bottom: 8px;
+    right: -60px; 
+    animation-name: murcury;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: -50px center;
+}
