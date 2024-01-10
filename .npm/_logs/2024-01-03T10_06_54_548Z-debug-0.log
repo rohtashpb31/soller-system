@@ -1,0 +1,104 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.2.3
+2 info using node@v20.10.0
+3 timing npm:load:whichnode Completed in 3ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Users/rohtash/Library/Caches/typescript/5.3/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:/Users/rohtash/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 12ms
+17 timing npm:load:configload Completed in 12ms
+18 timing config:load:flatten Completed in 5ms
+19 timing npm:load:mkdirpcache Completed in 3ms
+20 timing npm:load:mkdirplogs Completed in 1ms
+21 verbose title npm install @types/bootstrap@ts5.3 @types/jquery@ts5.3
+22 verbose argv "install" "--ignore-scripts" "@types/bootstrap@ts5.3" "@types/jquery@ts5.3" "--save-dev" "--user-agent" "typesInstaller/5.3.2"
+23 timing npm:load:setTitle Completed in 51ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:/Users/rohtash/.npm/_logs/2024-01-03T10_06_54_548Z-
+26 verbose logfile /Users/rohtash/.npm/_logs/2024-01-03T10_06_54_548Z-debug-0.log
+27 timing npm:load:logFile Completed in 27ms
+28 timing npm:load:timers Completed in 1ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 149ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 17ms
+34 timing arborist:ctor Completed in 1ms
+35 http fetch GET 200 https://registry.npmjs.org/@types%2fjquery 742ms (cache miss)
+36 http fetch GET 200 https://registry.npmjs.org/@types%2fbootstrap 753ms (cache miss)
+37 timing idealTree:userRequests Completed in 759ms
+38 silly idealTree buildDeps
+39 silly fetch manifest @types/jquery@3.5.29
+40 silly fetch manifest @types/bootstrap@5.2.10
+41 silly placeDep ROOT @types/bootstrap@5.2.10 OK for:  want: 5.2.10
+42 silly fetch manifest @popperjs/core@^2.9.2
+43 silly placeDep ROOT @types/jquery@3.5.29 OK for:  want: 3.5.29
+44 silly fetch manifest @types/sizzle@*
+45 http fetch GET 200 https://registry.npmjs.org/@types%2fsizzle 125ms (cache miss)
+46 http fetch GET 200 https://registry.npmjs.org/@popperjs%2fcore 170ms (cache miss)
+47 timing idealTree:#root Completed in 184ms
+48 silly placeDep ROOT @popperjs/core@2.11.8 OK for: @types/bootstrap@5.2.10 want: ^2.9.2
+49 timing idealTree:node_modules/@types/bootstrap Completed in 2ms
+50 timing idealTree:node_modules/@popperjs/core Completed in 0ms
+51 silly placeDep ROOT @types/sizzle@2.3.8 OK for: @types/jquery@3.5.29 want: *
+52 timing idealTree:node_modules/@types/jquery Completed in 2ms
+53 timing idealTree:node_modules/@types/sizzle Completed in 0ms
+54 timing idealTree:buildDeps Completed in 192ms
+55 timing idealTree:fixDepFlags Completed in 0ms
+56 timing idealTree Completed in 969ms
+57 timing reify:loadTrees Completed in 976ms
+58 timing reify:diffTrees Completed in 1ms
+59 silly reify moves {}
+60 timing reify:retireShallow Completed in 3ms
+61 timing reify:createSparse Completed in 1ms
+62 timing reify:loadBundles Completed in 0ms
+63 silly audit bulk request {
+63 silly audit   'types-registry': [ '0.1.677' ],
+63 silly audit   '@types/bootstrap': [ '5.2.10' ],
+63 silly audit   '@types/jquery': [ '3.5.29' ],
+63 silly audit   '@popperjs/core': [ '2.11.8' ],
+63 silly audit   '@types/sizzle': [ '2.3.8' ]
+63 silly audit }
+64 silly tarball no local data for @popperjs/core@https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz. Extracting by manifest.
+65 silly tarball no local data for @types/sizzle@https://registry.npmjs.org/@types/sizzle/-/sizzle-2.3.8.tgz. Extracting by manifest.
+66 silly tarball no local data for @types/bootstrap@https://registry.npmjs.org/@types/bootstrap/-/bootstrap-5.2.10.tgz. Extracting by manifest.
+67 silly tarball no local data for @types/jquery@https://registry.npmjs.org/@types/jquery/-/jquery-3.5.29.tgz. Extracting by manifest.
+68 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 354ms
+69 timing auditReport:getReport Completed in 356ms
+70 silly audit report {}
+71 timing auditReport:init Completed in 0ms
+72 timing reify:audit Completed in 356ms
+73 http fetch GET 200 https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz 461ms (cache miss)
+74 timing reifyNode:node_modules/@popperjs/core Completed in 474ms
+75 http fetch GET 200 https://registry.npmjs.org/@types/sizzle/-/sizzle-2.3.8.tgz 542ms (cache miss)
+76 timing reifyNode:node_modules/@types/sizzle Completed in 555ms
+77 http fetch GET 200 https://registry.npmjs.org/@types/jquery/-/jquery-3.5.29.tgz 542ms (cache miss)
+78 timing reifyNode:node_modules/@types/jquery Completed in 557ms
+79 http fetch GET 200 https://registry.npmjs.org/@types/bootstrap/-/bootstrap-5.2.10.tgz 551ms (cache miss)
+80 timing reifyNode:node_modules/@types/bootstrap Completed in 564ms
+81 timing reify:unpack Completed in 565ms
+82 timing reify:unretire Completed in 0ms
+83 timing build:queue Completed in 0ms
+84 timing build:deps Completed in 1ms
+85 timing build Completed in 1ms
+86 timing reify:build Completed in 2ms
+87 timing reify:trash Completed in 0ms
+88 timing reify:save Completed in 14ms
+89 timing reify Completed in 1587ms
+90 silly ADD node_modules/@types/sizzle
+91 silly ADD node_modules/@popperjs/core
+92 silly ADD node_modules/@types/jquery
+93 silly ADD node_modules/@types/bootstrap
+94 timing command:install Completed in 1594ms
+95 verbose exit 0
+96 timing npm Completed in 2171ms
+97 info ok

@@ -1,0 +1,80 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.2.3
+2 info using node@v20.10.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Users/rohtash/Library/Caches/typescript/5.3/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:/Users/rohtash/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 2ms
+16 timing config:load Completed in 10ms
+17 timing npm:load:configload Completed in 10ms
+18 timing config:load:flatten Completed in 2ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm install types-registry@latest
+22 verbose argv "install" "--ignore-scripts" "types-registry@latest"
+23 timing npm:load:setTitle Completed in 26ms
+24 timing npm:load:display Completed in 2ms
+25 verbose logfile logs-max:10 dir:/Users/rohtash/.npm/_logs/2024-01-03T10_06_31_517Z-
+26 verbose logfile /Users/rohtash/.npm/_logs/2024-01-03T10_06_31_517Z-debug-0.log
+27 timing npm:load:logFile Completed in 11ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 71ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing arborist:ctor Completed in 0ms
+34 timing idealTree:init Completed in 13ms
+35 http fetch GET 200 https://registry.npmjs.org/npm 2576ms (cache revalidated)
+36 http fetch GET 200 https://registry.npmjs.org/types-registry 2823ms (cache miss)
+37 timing idealTree:userRequests Completed in 2832ms
+38 silly idealTree buildDeps
+39 silly fetch manifest types-registry@0.1.677
+40 silly placeDep ROOT types-registry@0.1.677 OK for:  want: 0.1.677
+41 timing idealTree:#root Completed in 7ms
+42 timing idealTree:node_modules/types-registry Completed in 0ms
+43 timing idealTree:buildDeps Completed in 8ms
+44 timing idealTree:fixDepFlags Completed in 0ms
+45 timing idealTree Completed in 2854ms
+46 timing reify:loadTrees Completed in 2855ms
+47 timing reify:diffTrees Completed in 1ms
+48 silly reify moves {}
+49 timing reify:retireShallow Completed in 2ms
+50 timing reify:createSparse Completed in 3ms
+51 timing reify:loadBundles Completed in 0ms
+52 silly audit bulk request { 'types-registry': [ '0.1.677' ] }
+53 silly tarball no local data for types-registry@https://registry.npmjs.org/types-registry/-/types-registry-0.1.677.tgz. Extracting by manifest.
+54 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 351ms
+55 timing auditReport:getReport Completed in 354ms
+56 silly audit report {}
+57 timing auditReport:init Completed in 0ms
+58 timing reify:audit Completed in 354ms
+59 http fetch GET 200 https://registry.npmjs.org/types-registry/-/types-registry-0.1.677.tgz 346ms (cache miss)
+60 timing reifyNode:node_modules/types-registry Completed in 354ms
+61 timing reify:unpack Completed in 355ms
+62 timing reify:unretire Completed in 1ms
+63 timing build:queue Completed in 0ms
+64 timing build:deps Completed in 1ms
+65 timing build Completed in 1ms
+66 timing reify:build Completed in 1ms
+67 timing reify:trash Completed in 1ms
+68 timing reify:save Completed in 6ms
+69 timing reify Completed in 3256ms
+70 silly ADD node_modules/types-registry
+71 timing command:install Completed in 3261ms
+72 notice
+72 notice New patch version of npm available! 10.2.3 -> 10.2.5
+72 notice Changelog: <https://github.com/npm/cli/releases/tag/v10.2.5>
+72 notice Run `npm install -g npm@10.2.5` to update!
+72 notice
+73 verbose exit 0
+74 timing npm Completed in 3670ms
+75 info ok
